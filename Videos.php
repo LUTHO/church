@@ -51,13 +51,13 @@
           ?>
 
           <div class="col s12 m3 z-depth-3" style="margin-bottom: 10px;">
-             <embed src = '$url'></embed><br/>
-              <!--<video width='320' height='240' controls>
-                <source src='videos/rise.mp4' type='video/mp4'>  
-                <source src='videos/rise.ogg' type='video/ogg'>       
+             <!-- <embed src = "<?= $ro['url'] ?>"></embed><br/> -->
+              <video width='320' height='240' controls>
+                <source src='<?= $ro['url'] ?>' type='video/mp4'>  
+                <!-- <source src='videos/rise.ogg' type='video/ogg'>        -->
 
                   Your browser does not support the video tag.
-              </video><br/>-->
+              </video><br/>
             <div class="indigo darken-2 white-text"><?php echo $ro['name'];?></div>
           </div>
 
